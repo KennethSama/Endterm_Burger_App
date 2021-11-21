@@ -35,6 +35,7 @@ public class SplashScreen extends AppCompatActivity {
         }, 4000);
     }
     private void InitializeComponents(){
+        getSupportActionBar().hide();
         _message = getResources().getStringArray(R.array.splash_messages);
         textView_message = findViewById(R.id.textView_message);
 
