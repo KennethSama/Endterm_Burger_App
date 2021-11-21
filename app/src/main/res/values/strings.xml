@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Endterm Burger App</string>
+    <string name="app_title">MeatyBuns</string>
+    <string-array name="splash_messages">
+        <item>Expect Meaty Goodness</item>
+        <item>Picture-Perfect Burgers</item>
+        <item>World Class Patties w/ Buns</item>
+    </string-array>
 </resources>
