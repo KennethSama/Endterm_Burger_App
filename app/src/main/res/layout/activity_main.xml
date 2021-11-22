@@ -4,39 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_columnWeight="1"
+    android:background="@color/white"
     tools:context=".MainActivity"
-    tools:ignore="SpeakableTextPresentCheck"
-    android:background="@color/white">
+    tools:ignore="SpeakableTextPresentCheck">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white">
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView_newProduct"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ad_menu_intro" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageView_newProduct"
+            <GridLayout
                 android:layout_width="match_parent"
-                android:layout_height="359dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="0dp"
-                android:src="@drawable/ad_menu_intro" />
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:columnCount="2"
+                android:useDefaultMargins="true">
 
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="110dp"
+                    android:layout_height="220dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="7dp"
+                    app:srcCompat="@drawable/kingsize" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="110dp"
+                    android:layout_height="220dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="7dp"
+                    app:srcCompat="@drawable/bitesize" />
 
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="110dp"
+                    android:layout_height="220dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="7dp"
+                    app:srcCompat="@drawable/classic" />
 
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="110dp"
+                    android:layout_height="220dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="7dp"
+                    app:srcCompat="@drawable/chicken" />
 
+            </GridLayout>
         </RelativeLayout>
 
     </LinearLayout>
