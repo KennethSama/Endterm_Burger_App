@@ -29,7 +29,7 @@ public class SplashScreen extends AppCompatActivity {
         textView_message.setText( _message[_rand.nextInt(_message.length)]);
 
         _handler.postDelayed(() -> {
-            Intent intent_homeScreen = new Intent(SplashScreen.this, MainActivity.class);
+            Intent intent_homeScreen = new Intent(SplashScreen.this, view_product.class);
             startActivity(intent_homeScreen);
             finish();
         }, 4000);
