@@ -43,4 +43,7 @@ public class view_product extends AppCompatActivity {
         tv_itemIngredients.setText(getIntent().getStringExtra("ITEM INGREDIENTS"));
         image_itemImage.setImageResource(getResources().getIdentifier(getIntent().getStringExtra("ITEM IMAGE"), "drawable", getPackageName()));
     }
+    public void Goback(View v){
+        finish();
+    }
 }

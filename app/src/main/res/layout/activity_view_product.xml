@@ -85,6 +85,7 @@
             android:background="@color/circle_pink"
             android:drawablePadding="2dp"
             android:fontFamily="@font/quicksand_semibold"
+            android:onClick="Goback"
             android:text="Go Back"
             android:textColor="@color/white"
             android:textSize="16sp"
