@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             LoadDetailedMenuItem(R.id.menuItem1);
         }
         else if(v.getId() == R.id.menuItem2){
+            LoadDetailedMenuItem(R.id.menuItem2);
 
         }
         else if(v.getId() == R.id.menuItem3){
