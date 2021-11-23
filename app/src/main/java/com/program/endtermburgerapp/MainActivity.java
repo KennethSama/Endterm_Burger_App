@@ -49,10 +49,12 @@ public class MainActivity extends AppCompatActivity {
     public class MenuItem{
         String name = "";
         double price = 0;
+        String ingredients = "";
 
-        public void MenuItem(String _name, double _price){
+        public void MenuItem(String _name, double _price, String _ingredients){
             name = _name;
             price = _price;
+            ingredients = _ingredients;
         }
     }
 }
